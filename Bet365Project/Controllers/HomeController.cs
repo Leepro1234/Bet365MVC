@@ -26,5 +26,11 @@ namespace Bet365Project.Controllers
 
             return View();
         }
+
+        public ActionResult List001MA()
+        {
+
+            return View();
+        }
     }
 }
