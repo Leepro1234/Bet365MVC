@@ -30,6 +30,14 @@ namespace Bet365Project.Controllers
         public ActionResult List001MA()
         {
 
+            using (var db = new MainDbContext())
+            {
+
+                var userId = db.scoccer.Where(u => u.ID == 0).Select(u => u.LEAGUE).ToList();
+                string userNo = userId[0].ToString();
+
+            }
+
             return View();
         }
     }
